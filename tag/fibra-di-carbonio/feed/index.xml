@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fibra di carbonio &#8211; Stile Arredamenti</title>
+	<atom:link href="/tag/fibra-di-carbonio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Il gusto raffinato del Made in Italy</description>
+	<lastBuildDate>Thu, 21 May 2015 14:04:59 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6</generator>
+	<item>
+		<title>Mobile settimanale in fibra di carbonio</title>
+		<link>/mobile-settimanale-in-fibra-di-carbonio/</link>
+					<comments>/mobile-settimanale-in-fibra-di-carbonio/#respond</comments>
+		
+		<dc:creator><![CDATA[Maria Passilongo]]></dc:creator>
+		<pubDate>Thu, 21 May 2015 14:04:59 +0000</pubDate>
+				<category><![CDATA[Hotel]]></category>
+		<category><![CDATA[fibra di carbonio]]></category>
+		<category><![CDATA[progetti d'arredo]]></category>
+		<category><![CDATA[serigrafia personalizzata]]></category>
+		<category><![CDATA[verniciatura naturale]]></category>
+		<guid isPermaLink="false">/?p=1900</guid>
+
+					<description><![CDATA[Mobile settimanale in fibra di carbonio 100% con finiture in poliestere serigrafato (personalizzabile) ed incollaggi naturali.]]></description>
+										<content:encoded><![CDATA[<p>Mobile settimanale in fibra di carbonio 100% con finiture in poliestere serigrafato (personalizzabile) ed incollaggi naturali.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/mobile-settimanale-in-fibra-di-carbonio/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
