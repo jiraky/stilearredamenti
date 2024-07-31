@@ -456,9 +456,49 @@ accettando la sfida di spazi architettonici, anche inconsueti, esaminandone i pr
 	</p>
 </div> </div>
 </div>
-</div></section>
-<style>@media only screen and (max-width:1024px) {
-            }</style>
+</div>
+</section>
+<style>   .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            background: #F0F0F0;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 3px;
+            flex: 1 1 calc(25% - 20px); /* 20px total margin per item */
+            box-sizing: border-box;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .service-item h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+
+        .service-item p {
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            .service-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .service-item {
+                flex: 1 1 100%;
+            }
+        }</style>
   <section id="i-nostri-servizi" style="background-color: #f7f7f7;">
         <div class="sectioncontainer">
             <div class="section-header">
