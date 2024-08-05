@@ -918,36 +918,7 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
                                     </ul>
                                 </div>
 
-                                <script>
-                                    (function ($) {
-                                        $(document).ready(function () {
-                                            $(".landingpagewrapper").jnormalblog();
-                                            $(".landingpagewrapper").jlanding();
-
-                                            // Gestione degli ancoraggi per desktop e mobile
-                                            $('.slider-button, .landing-navigator ul li').on('click', function (e) {
-                                                e.preventDefault();
-                                                var target = $(this).attr('href') || $(this).data('for');
-                                                if (target) {
-                                                    $('html, body').animate({
-                                                        scrollTop: $('[data-id="' + target + '"]').offset().top
-                                                    }, 800);
-                                                }
-                                            });
-
-                                            $('#main-mobile-menu ul li a').on('click', function (e) {
-                                                e.preventDefault();
-                                                var target = $(this).attr('href');
-                                                if (target) {
-                                                    $('html, body').animate({
-                                                        scrollTop: $(target).offset().top
-                                                    }, 800);
-                                                    $('#main-mobile-menu').removeClass('open');
-                                                }
-                                            });
-                                        });
-                                    })(jQuery);
-                                </script>
+                               
                             </div> <!-- .content -->
                         </div> <!-- contentholder -->
                     </div> <!-- #rightsidecontainer -->
@@ -1187,6 +1158,36 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
         <script type="text/javascript"
             src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1"
             id="wpb_composer_front_js-js"></script>
+         <script>
+                                    (function ($) {
+                                        $(document).ready(function () {
+                                            $(".landingpagewrapper").jnormalblog();
+                                            $(".landingpagewrapper").jlanding();
+
+                                            // Gestione degli ancoraggi per desktop e mobile
+                                            $('.slider-button, .landing-navigator ul li').on('click', function (e) {
+                                                e.preventDefault();
+                                                var target = $(this).attr('href') || $(this).data('for');
+                                                if (target) {
+                                                    $('html, body').animate({
+                                                        scrollTop: $('[data-id="' + target + '"]').offset().top
+                                                    }, 800);
+                                                }
+                                            });
+
+                                            $('#main-mobile-menu ul li a').on('click', function (e) {
+                                                e.preventDefault();
+                                                var target = $(this).attr('href');
+                                                if (target) {
+                                                    $('html, body').animate({
+                                                        scrollTop: $(target).offset().top
+                                                    }, 800);
+                                                    $('#main-mobile-menu').removeClass('open');
+                                                }
+                                            });
+                                        });
+                                    })(jQuery);
+                                </script>
 </body>
 
 </html>
