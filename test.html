@@ -1125,69 +1125,75 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
             src="/wp-content/themes/jkreativ-themes/public/js/internalmin/jquery.jnpslider.js?ver=2.4.2"
             id="jkreativ_npslider-js"></script>
         <script type="text/javascript"
-            src="/wp-content/themes/jkreativ-themes/public/js/external/jquery.magnific-popup.min.js?ver=2.4.2"
-            id="jkreativ_magnificpopup-js"></script>
+            src="/wp-content/themes/jkreativ-themes/public/js/external/jquery.royalslider.min.js?ver=2.4.2"
+            id="jkreativ_royalslider-js"></script>
         <script type="text/javascript"
-            src="/wp-content/themes/jkreativ-themes/public/js/external/jquery.typer.js?ver=2.4.2"
-            id="jkreativ_typer-js"></script>
-        <script type="text/javascript"
-            src="/wp-content/themes/jkreativ-themes/public/js/external/odometer.min.js?ver=2.4.2"
-            id="jkreativ_odometer-js"></script>
-        <script type="text/javascript"
-            src="/wp-content/themes/jkreativ-themes/public/js/external/jquery.tubular.1.0.js?ver=2.4.2"
-            id="jkreativ_tubular-js"></script>
+            src="/wp-content/themes/jkreativ-themes/public/js/external/responsiveslider.min.js?ver=2.4.2"
+            id="jkreativ_responsiveslider-js"></script>
+        <script type="text/javascript" id="jkreativ_responsiveslider-js-after">
+            jQuery(function () { jQuery('.home-slider.fullscreen').responsiveSlider('auto'); });
+        </script>
         <script type="text/javascript"
             src="/wp-content/themes/jkreativ-themes/public/js/internalmin/jquery.jlanding.js?ver=2.4.2"
             id="jkreativ_landing-js"></script>
-        <script type="text/javascript"
-            src="https://www.google.com/recaptcha/api.js?render=6LeZGOAZAAAAAP1a_ehoZ3i9RxG3cTTA87hdeU-v&#038;ver=3.0"
-            id="google-recaptcha-js"></script>
-        <script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4"
-            id="wp-polyfill-js"></script>
-        <script type="text/javascript" id="wp-polyfill-js-after">
-            ('fetch' in window) || document.write('<script src="/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"><\/scr' + 'ipt>'); (document.contains) || document.write('<script src="/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"><\/scr' + 'ipt>'); (window.DOMRect) || document.write('<script src="/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"><\/scr' + 'ipt>'); (window.URL && window.URL.prototype && window.URLSearchParams) || document.write('<script src="/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"><\/scr' + 'ipt>'); (window.FormData && window.FormData.prototype.keys) || document.write('<script src="/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"><\/scr' + 'ipt>'); (Element.prototype.matches && Element.prototype.closest) || document.write('<script src="/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"><\/scr' + 'ipt>');
+        <script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2"
+            id="contact-form-7-js"></script>
+        <script type="text/javascript" src="/wp-content/themes/jkreativ-themes/public/js/internalmin/jquery.jgallery.js?ver=2.4.2"
+            id="jkreativ_gallery-js"></script>
+        <script type="text/javascript" id="jkreativ_common-js-after">
+            jQuery(function () { jQuery("a[data-rel^='prettyPhoto'], .gallery a[href$='.jpg']").prettyPhoto({ animation_speed: 'fast', hook: 'data-rel', theme: 'pp_default', slideshow: 7000, autoplay_slideshow: false, deeplinking: false }); });
         </script>
-        <script type="text/javascript" id="wpcf7-recaptcha-js-extra">
-            /* <![CDATA[ */
-            var wpcf7_recaptcha = { "sitekey": "6LeZGOAZAAAAAP1a_ehoZ3i9RxG3cTTA87hdeU-v", "actions": { "homepage": "homepage", "contactform": "contactform" } };
-            /* ]]> */
+        <script type="text/javascript" id="jkreativ_normalblog-js-after">
+            jQuery(function () { jQuery('.blogpost.normalimage').jnormalblog(); });
         </script>
-        <script type="text/javascript" src="/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.4.2"
-            id="wpcf7-recaptcha-js"></script>
-        <script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.6" id="wp-embed-js"></script>
-        <script type="text/javascript"
-            src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1"
-            id="wpb_composer_front_js-js"></script>
-         <script>
-                                    (function ($) {
-                                        $(document).ready(function () {
-                                            $(".landingpagewrapper").jnormalblog();
-                                            $(".landingpagewrapper").jlanding();
+        <script type="text/javascript" id="jkreativ_landing-js-after">
+            jQuery(function () { jQuery('.landingpagewrapper').jlanding({ 'nav': '.landing-navigator.default' }); });
+        </script>
+        <script type="text/javascript" id="jquery-ui-core-js-after">
+            jQuery(document).ready(function () { jQuery('img.svg').each(function () { var $img = jQuery(this); var imgID = $img.attr('id'); var imgClass = $img.attr('class'); var imgURL = $img.attr('src'); jQuery.get(imgURL, function (data) { var $svg = jQuery(data).find('svg'); if (typeof imgID !== 'undefined') { $svg = $svg.attr('id', imgID); } if (typeof imgClass !== 'undefined') { $svg = $svg.attr('class', imgClass + ' replaced-svg'); } $svg = $svg.removeAttr('xmlns:a'); $img.replaceWith($svg); }, 'xml'); }); });
+        </script>
 
-                                            // Gestione degli ancoraggi per desktop e mobile
-                                            $('.slider-button, .landing-navigator ul li').on('click', function (e) {
-                                                e.preventDefault();
-                                                var target = $(this).attr('href') || $(this).data('for');
-                                                if (target) {
-                                                    $('html, body').animate({
-                                                        scrollTop: $('[data-id="' + target + '"]').offset().top
-                                                    }, 800);
-                                                }
-                                            });
+        <style>
+            .form-button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 4px;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
 
-                                            $('#main-mobile-menu ul li a').on('click', function (e) {
-                                                e.preventDefault();
-                                                var target = $(this).attr('href');
-                                                if (target) {
-                                                    $('html, body').animate({
-                                                        scrollTop: $(target).offset().top
-                                                    }, 800);
-                                                    $('#main-mobile-menu').removeClass('open');
-                                                }
-                                            });
-                                        });
-                                    })(jQuery);
-                                </script>
+            .form-button:hover {
+                background-color: #0056b3;
+            }
+
+            @media screen and (max-width: 768px) {
+                .sectioncontainer {
+                    padding: 20px;
+                }
+
+                .row-fluid {
+                    flex-direction: column;
+                }
+
+                .span6 {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+    </div>
 </body>
 
 </html>
