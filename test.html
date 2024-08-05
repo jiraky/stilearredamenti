@@ -538,7 +538,7 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
     <a href="#servizi">Servizi</a>
 </li>
 <li id="menu-item-realizzazioni" class="menu-item menu-item-type-post_type menu-item-object-page bgnav">
-    <a href="#realizzazioni">Realizzazioni</a>
+    <a href="#le-nostre-realizzazioni">Realizzazioni</a>
 </li>
 <li id="menu-item-blog" class="menu-item menu-item-type-post_type menu-item-object-page bgnav">
     <a href="#blog">Blog</a>
@@ -570,7 +570,7 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
                                 <style>
                                     @media only screen and (max-width:1024px) {}
                                 </style>
-                                <section class=" doublebottommargin    cahuNKJQoV " data-id="filosofia"
+                                <section id="chi-siamo" class=" doublebottommargin    cahuNKJQoV " data-id="filosofia"
                                     data-title="La Nostra Filosofia"
                                     style="background-image : url(//wp-content/uploads/2014/07/stile_arredamenti_homepage.jpg);background-position : center center;background-repeat	: no-repeat;background-size : cover;">
 
@@ -696,7 +696,7 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
                                     </div>
                                 </section>
 
-                                <section class="     DiPNU5f3Jo " data-id="" data-title=""
+                                <section id="portfolio" class="     DiPNU5f3Jo " data-id="" data-title=""
                                     style=" background-color: #f7f7f7; ">
                                     <div class="sectioncontainer">
                                         <div class="section-header  position-center">
@@ -810,7 +810,7 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
                                     @media only screen and (max-width:1024px) {}
                                 </style>
 
-                                <section class="     cFD7anShqb " data-id="" data-title=""
+                                <section id="blog" class="     cFD7anShqb " data-id="" data-title=""
                                     style=" background-color: #f7f7f7; ">
                                     <div class="sectioncontainer">
                                         <div class="section-header  position-center">
@@ -867,7 +867,7 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
                                 </section>
 
                                 <!-- Aggiunta della sezione con Google Maps e Google Form -->
-                                <section class="two-column-section" style="margin: 40px 0;">
+                                <section id="contatti" class="two-column-section" style="margin: 40px 0;">
                                     <div class="sectioncontainer">
                                         <div class="row-fluid">
                                             <div class="span6" style="flex: 1; padding: 10px;">
@@ -1183,5 +1183,37 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
             src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1"
             id="wpb_composer_front_js-js"></script>
 </body>
+    <script>
+    (function ($) {
+        $(document).ready(function () {
+            $(".landingpagewrapper").jnormalblog();
+            $(".landingpagewrapper").jlanding();
+
+            // Gestione degli ancoraggi per desktop e mobile
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                if (target) {
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top
+                    }, 800);
+                }
+            });
+
+            $('#main-mobile-menu ul li a').on('click', function (e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                if (target.startsWith('#')) {
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top
+                    }, 800);
+                    $('#main-mobile-menu').removeClass('open');
+                } else {
+                    window.location.href = target;
+                }
+            });
+        });
+    })(jQuery);
+</script>
 
 </html>
